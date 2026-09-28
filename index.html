@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Sıra</th>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Maaş</th>
+                <th>Əməliyyatlar</th>
+                <th>
+                    <button id="addBtn" onclick="yeniIsci()">
+                        Əlavə et
+                    </button>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+            <tr id="yeni">
+
+                <td>1</td>
+
+                <td>
+                    <input id="ad" placeholder="adınız">
+                </td>
+
+                <td>
+                    <input id="soyad" placeholder="soyadınız">
+                </td>
+
+                <td>
+                    <input id="maas" placeholder="maaşınız">
+                </td>
+
+                <td colspan="2">
+
+                    <button class="cancel-btn" onclick="imtinaEt()">
+                        İmtina et
+                    </button>
+
+                    <button class="save-btn" onclick="elaveEt()">
+                        Yadda saxla
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
